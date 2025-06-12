@@ -101,13 +101,13 @@ p {
     margin: 1rem;
     font-size: 0.85rem;
   }
-  
+
   #result thead th,
   #result tbody td {
     padding: 0.5rem 0.25rem;
     font-size: 0.8rem;
   }
-  
+
   #result thead th {
     font-size: 0.7rem;
   }
