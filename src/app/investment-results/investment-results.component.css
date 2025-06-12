@@ -1,0 +1,122 @@
+#result {
+  max-width: 1000px;
+  margin: 2rem auto;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+#result thead {
+  background: linear-gradient(45deg, #00d4aa, #00a3ff);
+}
+
+#result thead th {
+  padding: 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ffffff;
+  border: none;
+  text-align: center;
+}
+
+#result tbody {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+#result tbody tr {
+  transition: all 0.3s ease;
+}
+
+#result tbody tr:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+#result tbody tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+#result tbody tr:nth-child(even):hover {
+  background: rgba(255, 255, 255, 0.07);
+}
+
+#result tbody td {
+  padding: 1rem;
+  font-size: 0.95rem;
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  font-weight: 500;
+}
+
+#result tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Colori specifici per ogni colonna */
+#result tbody td:nth-child(1) { /* Year */
+  color: #00d4aa;
+  font-weight: 600;
+}
+
+#result tbody td:nth-child(2) { /* Investment Value */
+  color: #00a3ff;
+  font-weight: 600;
+}
+
+#result tbody td:nth-child(3) { /* Interest Year */
+  color: #ffd700;
+}
+
+#result tbody td:nth-child(4) { /* Total Interest */
+  color: #ff6b6b;
+  font-weight: 600;
+}
+
+#result tbody td:nth-child(5) { /* Invested Capital */
+  color: #4ecdc4;
+}
+
+p {
+  text-align: center;
+  margin: 3rem auto;
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 500px;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  #result {
+    margin: 1rem;
+    font-size: 0.85rem;
+  }
+  
+  #result thead th,
+  #result tbody td {
+    padding: 0.5rem 0.25rem;
+    font-size: 0.8rem;
+  }
+  
+  #result thead th {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #result {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
